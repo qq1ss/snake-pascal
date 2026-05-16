@@ -1,0 +1,5 @@
+snake
+*.o
+*.ppu
+*.bak
+*.res
