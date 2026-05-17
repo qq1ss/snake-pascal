@@ -17,8 +17,6 @@ begin
     TextColor(Red);
     GotoXY(CenterScreenX - len, CenterScreenY);
     write(MessageGameOver);
-    {GotoXY(CenterScreenX - len, CenterScreenY + 2);
-    write(MessageYourScore + ' ', stat.score, '!');}
     GotoXY(CenterScreenX - len, ScreenHeight);
     write(MessageQuit);
     GotoXY(1, 1);
