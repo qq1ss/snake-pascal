@@ -29,6 +29,7 @@ begin
 
     InitFood(Food);
     InitSnake(Snake);
+    PrevSnakeDirection := Snake.direction;
 
     { Prepare to cycle }
     ShowBoarder(Boarder, Offset);
@@ -42,7 +43,6 @@ begin
         if KeyPressed then
         begin
             GetKey(Code);
-            PrevSnakeDirection := Snake.direction;
             case Code of
                 KeyUp:
                 begin
@@ -74,6 +74,7 @@ begin
         if Step >= StepToMove then
         begin
             Step := 0;
+            PrevSnakeDirection := Snake.direction;
             MovesForFood := MovesForFood + 1;
             MoveSnake(Snake, Food, Offset, Boarder);
             if MovesForFood >= MovesToAddFood then
