@@ -54,6 +54,7 @@ procedure ShowAllFood(var Food: TFood; Offset: TOffset);
 var
     tmp: TDeckItemPtr;
 begin
+    TextColor(Red);
     tmp := Food.deck.first;
 
     while tmp <> nil do

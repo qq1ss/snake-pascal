@@ -90,6 +90,7 @@ var
     x, y: byte;
     Item: TDeckItemPtr;
 begin
+    TextColor(Green);
     x := Snake.deck.first^.cell.x;
     y := Snake.deck.first^.cell.y;
 
